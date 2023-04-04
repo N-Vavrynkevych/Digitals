@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Avenir Next LT Pro", sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1de1a7;
+}
+
+.footer {
+  background-color: #231f20;
+  color: #ffffff;
+}
+.footer .footer__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 20px;
+  font-size: 14px;
+}
+
+.green {
+  background-color: #1de1a7;
+}
+
+.blue {
+  background-color: #02fffb;
+}
+
+.yellow {
+  background-color: #ffed00;
+}
+
+.pink {
+  background-color: #f41f94;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.gray {
+  background-color: #f2f2f2;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.dark {
+  background-color: #231f20;
+}
+
+.menu {
+  font-family: "Avenir", sans-serif;
+  color: #000000;
+}
+.menu li {
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.main__text {
+  padding: 50px 10px 10px 10px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-family: "Belly", sans-serif;
+}
+
+h3 {
+  font-family: serif;
+}
+
+.top {
+  margin-bottom: 15%;
+}
+
+.navbar-toggler {
+  height: 68px;
+  width: 71px;
+  border-radius: 50%;
+  background-color: rgba(242, 242, 242, 0.51);
+}
+
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.cards .card__1 {
+  position: relative;
+  max-width: 350px;
+  min-width: 100px;
+  min-height: 500px;
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: aliceblue;
+  box-shadow: -1rem 0 3rem #000;
+  color: #000000;
+  font-weight: 900;
+  font-size: 22px;
+  transition: 300ms ease-in-out;
+  background-color: #02fffb;
+}
+.cards .card__2 {
+  position: relative;
+  max-width: 350px;
+  min-width: 100px;
+  min-height: 500px;
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: aliceblue;
+  box-shadow: -1rem 0 3rem #000;
+  color: #000000;
+  font-weight: 900;
+  font-size: 22px;
+  transition: 300ms ease-in-out;
+  background-color: #ffed00;
+}
+.cards .card__3 {
+  position: relative;
+  max-width: 350px;
+  min-width: 100px;
+  min-height: 500px;
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: aliceblue;
+  box-shadow: -1rem 0 3rem #000;
+  color: #000000;
+  font-weight: 900;
+  font-size: 22px;
+  transition: 300ms ease-in-out;
+  background-color: #f41f94;
+  flex: 1 0 200px;
+}
+
+.card__1:hover, .card__2:hover, .card__3:hover {
+  transform: rotate(-4deg);
+}
+
+.card:hover ~ .card {
+  z-index: 1;
+  translate: 0px;
+}
+
+.cardo {
+  display: flex;
+  justify-content: center;
+}
+
+.effect li {
+  display: inline-flex;
+}
+
+.conect__body {
+  margin: 5px 5px 5px 5px;
+  max-height: 480px;
+}
+.conect__logo {
+  display: flex;
+  justify-content: end;
+}
+.conect__label {
+  font-size: 18px;
+  font-weight: normal;
+}
+.conect__title {
+  min-height: 102px;
+  font-size: 34px;
+}
+.conect__text {
+  margin-top: 15%;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.bottom__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.bottom__subtitle {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1.73px;
+}
+
+.our__process-title {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  color: #1de1a7;
+}
+
+.boy__body {
+  display: flex;
+  justify-content: center;
+}
+
+.boy__left, .boy__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.circle {
+  display: inline-block;
+  text-align: center;
+  font-size: 32px;
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+}
+
+.circle-color-1 {
+  background-color: #02fffb;
+}
+
+.circle-color-2 {
+  background-color: #1de1a7;
+}
+
+.circle-color-3 {
+  background-color: #ffed00;
+}
+
+.circle-color-4 {
+  background-color: #f41f94;
+}
+
+.boy__text {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px 0px 10px;
+  font-size: 32px;
+  font-weight: 500;
+}
